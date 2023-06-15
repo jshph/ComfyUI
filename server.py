@@ -391,6 +391,8 @@ class PromptServer():
             resp_code = 200
             out_string = ""
             json_data =  await request.json()
+            # with open('./json_sample_req.json', "w") as outf:
+            #     outf.write(json.dumps(json_data))
 
             if "number" in json_data:
                 number = float(json_data['number'])
